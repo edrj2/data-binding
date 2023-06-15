@@ -13,6 +13,7 @@ export class DataBindingComponent implements OnInit {
   valorAtual : String = '';
   valorSalvo = '';
   isMouseOver : boolean = false;
+  nome: string = 'abc';
 
   getValor(){
     return 1;
@@ -31,7 +32,7 @@ export class DataBindingComponent implements OnInit {
     this.valorAtual = (<HTMLInputElement>evento.target).value;
   }
 
-  salvarValor(valor){
+  salvarValor(valor: string){
     this.valorSalvo = valor;
   }
 
